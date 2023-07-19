@@ -1,7 +1,79 @@
 # Advance_web_practical
 
+<h2>Practical 1</h2>
 
-Practical 1
+Practical 1.c
+Aim: Create an application that receives the (Student Id, Student Name, Course Name, Date of
+Birth) information from a set of students. The application should also display the
+information of all the students once the data entered.
+```c#
+using System;
+
+namespace practical_1c
+{
+    internal class Program
+    {
+        /// id name course dob
+        int id, dob;
+        string name, course;
+
+        public int Id
+        {
+            set { id = value; }
+            get { return id; }  
+        }
+
+        public int Dob
+        {
+            set { dob = value; }
+            get { return dob; }
+        }
+
+        public string Name
+        {
+            get;set;
+        }
+
+        public string Course
+        {
+            get;set;
+        }
+
+        public Program(int id, string name, string course, int dob) {
+            Id = id; 
+            Name = name; 
+            Course = course; 
+            Dob = dob;
+            
+        }
+
+        public void display()
+        {
+            Console.WriteLine("id :" + Id + ", name :" + Name + ", course :" + Course + ", dob :" + Dob);
+        }
+
+        
+        static void Main(string[] args)
+        {
+            Program a = new Program(1, "Omkar", "BSC-IT", 2004);
+            a.display();
+
+            Console.ReadLine();
+        }
+    }
+}
+
+```
+
+Practical 1.d
+Aim:  Create an application to demonstrate following operations <br>
+i. Generate Fibonacci series. <br>
+ii. Test for prime numbers.<br>
+iii. Test for vowels. <br>
+iv. Use of foreach loop with arrays<br>
+v. Reverse a number and find sum of digits of a number.
+
+<i>(Incomplete code)</i>
 ```c#
 using System;
 namespace TYIT
